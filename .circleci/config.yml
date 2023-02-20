@@ -1,7 +1,8 @@
 version: 2
-jobs:
-  build:
-    steps:
-      — checkout
-      - run: npm install
-      — run: npm test
+  jobs:
+    test:
+      steps:
+        - checkout
+        - run: echo "Running tests"
+        - run: npm install
+        - run: npm test
